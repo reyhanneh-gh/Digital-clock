@@ -31,5 +31,19 @@ This interactive card was developed as part of my journey into mastering JavaScr
 ### 🧑‍🎨 Credits  
 **Developed by**: Reyhaneh Ghalambor  
 **Date**: August 23, 2025  
-**Mentor**: Parsa Ghorbanian  
+**Mentor**: Parsa Ghorbanian
 **Purpose**: Practicing JavaScript fundamentals through interactive UI design
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://github.com/user-attachments/assets/4df06ac5-3604-4549-ad5f-241f096e81a4" alt="Date View (Deafult)" width="100%" />
+    </td>
+    <td width="50%" valign="top">
+      <img src="https://github.com/user-attachments/assets/d45793b7-38f9-4078-adff-4dade8e93a78" alt="Clock View (Hover)" width="100%" />
+    </td>
+  </tr>
+</table>
+
+
+
