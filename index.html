@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Doto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <head>
+
+        <style>
+            body {
+                font-family: 'Doto', sans-serif;
+            }
+        </style>
+    </head>
+</head>
+
+<body class="w-full h-[100vh] bg-gradient-to-b from-gray-950 to-violet-950 flex justify-center items-center">
+
+    <section class="w-full h-fit flex flex-wrap justify-center items-center">
+        <span class="material-symbols-outlined text-purple-300 text-[50px]">hourglass_bottom</span>
+        <h1 class="w-full text-center text-purple-200 py-10">Hover The Card To See The Clock</h1>
+
+        <div
+            class="size-20 sm:size-30 md:size-40 lg:size-50 flex justify-center items-center text-center border border-am rounded-xl mybg relative group text-purple-200 text-4xl">
+            <div id="date"
+                class="w-full h-full flex justify-center items-center text-purple-200 text-[18px] sm:text-[25px] md:text-4xl group-hover:opacity-0 duration-1000 absolute top-0 left-0">
+            </div>
+            <div id="minutes"
+                class="w-full h-full flex justify-center items-center text-purple-200 text-[50px] sm:text-[70px] md:text-8xl opacity-0 group-hover:opacity-100 duration-1000 absolute top-0 left-0">
+            </div>
+
+            <div
+                class="w-[50px] px-5 md:px-10 h-full absolute right-full top-0 text-6xl  md:text-8xl flex justify-center items-center text-purple-200 opacity-0 group-hover:opacity-100 duration-[2000ms]">
+                :
+                <div
+                    class="size-20 sm:size-30 md:size-40 lg:size-50 flex justify-center items-center border border-am rounded-xl mybg absolute top-0 right-[-100%] rotate-90 opacity-0 duration-[1000ms] group-hover:right-[100%] group-hover:rotate-0 group-hover:opacity-100 -z-10 text-6xl md:text-8xl text-purple-300">
+                    <div id="hours"
+                        class="w-full h-full flex justify-center items-center text-purple-200 text-[50px] sm:text-[70px] md:text-8xl opacity-0 group-hover:opacity-100 duration-1000 absolute top-0 left-0">
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-[50px] px-5 md:px-10 h-full absolute left-full top-0 text-6xl md:text-8xl flex justify-center items-center text-purple-200 opacity-0 group-hover:opacity-100 duration-[2000ms]">
+                :
+                <div
+                    class="size-20 sm:size-30 md:size-40 lg:size-50 flex justify-center items-center border border-am rounded-xl mybg absolute top-0 left-[-100%] -rotate-90 opacity-0 duration-[1000ms] group-hover:left-[100%] group-hover:rotate-0 group-hover:opacity-100 -z-10 text-6xl md:text-8xl text-purple-300">
+                    <div id="seconds"
+                        class="w-full h-full flex justify-center items-center text-purple-200 text-[50px] sm:text-[70px] md:text-8xl opacity-0 group-hover:opacity-100 duration-1000 absolute top-0 left-0">
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+</body>
+
+<script>
+
+    function DigitalClock() {
+        // ----------day and month-----------//
+        let today = new Date()
+        let _day = today.getDate()
+        let monthName = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ]
+        let _month = monthName[today.getMonth()]
+        document.getElementById('date').innerHTML = _month + "<br>" + _day
+
+        // ----------minute-----------//
+        let minute = new Date()
+        let _minute = minute.getMinutes()
+
+        if (_minute >= 0 && _minute < 10) {
+            document.getElementById('minutes').innerText = '0' + _minute;
+        } else {
+            document.getElementById('minutes').innerText = _minute;
+        }
+
+        // ----------hour-----------//
+        let hour = new Date()
+        let _hour = hour.getHours()
+
+        if (_hour >= 0 && _hour < 10) {
+            document.getElementById('hours').innerText = '0' + _hour;
+        } else {
+            document.getElementById('hours').innerText = _hour;
+        }
+
+        // ----------second-----------//
+        let second = new Date()
+        let _second = hour.getSeconds()
+
+        if (_second >= 0 && _second < 10) {
+            document.getElementById('seconds').innerText = '0' + _second;
+        } else {
+            document.getElementById('seconds').innerText = _second;
+        }
+    }
+
+    setInterval(DigitalClock, 1000)
+
+</script>
+
+</html>

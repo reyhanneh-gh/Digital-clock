@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.mybg {
+    background: linear-gradient(45deg, rgba(67, 27, 119, 0.901), rgba(20, 14, 48, 0.501));
+    border: 1px solid rgb(122, 120, 244);
+    box-shadow: 0 0 10px rgb(158, 82, 188);
+
+}
+
+span {
+    font-size: 50px !important;
+    animation: hourglass 10s ease-in-out alternate infinite;
+}
+
+@keyframes hourglass {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
