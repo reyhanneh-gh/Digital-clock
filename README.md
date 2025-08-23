@@ -1,7 +1,7 @@
 # 🕰️ Date-to-Clock Card – JavaScript Practice Project  
 An interactive UI card built with HTML, Tailwind CSS, and JavaScript that displays the current date and transforms into a live digital clock on hover. This project was created to reinforce JavaScript fundamentals like DOM manipulation, event handling, and time-based updates.
 
-🔗 [Live Demo](https://exquisite-dango-74e393.netlify.app/) 🪄
+🔗 [Live Demo](https://frolicking-banoffee-16e394.netlify.app/) 🪄
 
 ---
 
