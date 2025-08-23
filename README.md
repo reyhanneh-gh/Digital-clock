@@ -34,6 +34,7 @@ This interactive card was developed as part of my journey into mastering JavaScr
 **Mentor**: Parsa Ghorbanian
 **Purpose**: Practicing JavaScript fundamentals through interactive UI design
 
+
 <table>
   <tr>
     <td width="50%" valign="top">
