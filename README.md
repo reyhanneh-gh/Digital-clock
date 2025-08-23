@@ -31,7 +31,7 @@ This interactive card was developed as part of my journey into mastering JavaScr
 ### 🧑‍🎨 Credits  
 **Developed by**: Reyhaneh Ghalambor  
 **Date**: August 23, 2025  
-**Mentor**: Parsa Ghorbanian  **Purpose**: Practicing JavaScript fundamentals through interactive UI design
+**Mentor**: Parsa Ghorbanian
 
 
 <table>
